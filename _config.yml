@@ -1,0 +1,4 @@
+plugins:
+  - jemoji
+
+permalink: /blog/:categories/:year-:month-:day-:title

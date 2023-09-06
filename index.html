@@ -1,1 +1,59 @@
-test
+---
+layout: home
+tab-title: Sam Vuckovic's Website
+page-title: my website
+---
+
+<p>Woah no way what a cool website!!!</p>
+
+<p class="icons">
+  <a
+    href="https://www.youtube.com/@shock59/"
+    class="icon-youtube"
+    title="YouTube"
+  ></a>
+  <a href="https://github.com/shock59/" class="icon-github" title="GitHub"></a>
+  <a href="mailto:shock59@proton.me" class="icon-envelope" title="Email"></a>
+</p>
+
+<h2>Projects</h2>
+<div class="showcase">
+  <p>
+    <a href="https://www.youtube.com/watch?v=Jr8kcOYOW68">
+      Toggle Sprint for Minecraft Bedrock Edition</a
+    >
+  </p>
+
+  <p>Actually good projects coming soon</p>
+</div>
+
+{% if site.posts.size > 0 %}
+<h2>Blog Posts</h2>
+<div class="showcase">
+  {% for post in site.posts %}
+  <p>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </p>
+  {% endfor %}
+
+  <p>
+    <a href="/blog/">View more...</a>
+  </p>
+</div>
+{% endif %}
+
+<h2>About Me</h2>
+<p>
+  Hello, I'm Sam/Shock59! I'm 15 and unfortunately haven't made any notable
+  contributions or projects yet, hopefully I will in the future. For now I just
+  do random web and game development projects, as well as other things like
+  video editing.
+</p>
+<p>
+  I live in Australia, my timezone is AEST (UTC+10) and I use any pronouns. I am
+  not active on any public social media except for the ones linked here.
+</p>
+<p>
+  If you want to contact me for whatever reason you can do so via email at
+  <a href="mailto:shock59@proton.me">shock59@proton.me</a>.
+</p>
