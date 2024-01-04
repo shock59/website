@@ -63,6 +63,10 @@ h1::selection {
   -webkit-text-fill-color: #1e2326;
 }
 
+a:hover::selection {
+  background: #f233b5;
+}
+
 p.icons a {
   font-size: 32px;
   margin: 0 5px;
